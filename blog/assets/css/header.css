@@ -1,0 +1,23 @@
+@media screen and (max-width: 350px) {
+    #page > header.scrolled > div.container > div > a.navbar-brand {
+        width: 90px!important;
+        background-position: center;
+    }
+}
+
+#page > div > section.section-main.bg-white > div > div > div > h1.b1-title-m,
+#page > div > section.section-main.bg-white > div > div > div.col-md-6.content-text-bloco-1 > h1 {
+    padding: 0;
+}
+
+#page > div > section.section-main.bg-white > div > div > div.col-lg-6 > h1.b1-title-m {
+    font-size: 22px!important;
+}
+
+#page > div > section.section-main.bg-white > div > div > div.col-lg-6 > h1.b1-title-m:after {
+    display: none!important;
+}
+
+#page > div.scroll > section.section-main.bg-white > div > div > div.col-lg-6 > h1.b1-title-m {
+    text-align: left!important;
+}

@@ -1,0 +1,63 @@
+
+.side-posts ul li a::before {
+    font-family: 'Glyphicons Halflings';
+    font-size: 16px;
+    content: "\e250";
+    padding-right: 11px;
+    color: #0074C8;
+}
+
+.side-posts ul li a:hover {
+    color: #000!important;
+    text-decoration: none;
+}
+.side-posts ul li a {
+    color: #3e3e3e!important;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: 15px;
+    -webkit-transition: color .25s ease-in;
+    -o-transition: color .25s ease-in;
+    transition: color .25s ease-in;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.side-posts ul li {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    list-style: none;
+    background-color: #F8F8F8;
+    margin-bottom: 5px;
+    padding: 10px 0!important;
+    -webkit-transition: background-color .25s ease-in;
+    -o-transition: background-color .25s ease-in;
+    transition: background-color .25s ease-in;
+}
+
+.side-posts ul li:hover {
+    background-color: #dfdfdf;
+}
+
+.side-posts ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}

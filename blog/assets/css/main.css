@@ -1,0 +1,171 @@
+.blog-category {
+    padding-top: 0px!important;
+    padding-bottom: 20px;
+    border-bottom: none;
+}
+
+.blog-category.section-main {
+    margin-top: 0;
+}
+
+.blog-category:first-child {
+    padding-top: 80px!important;
+    margin-top: 70px;
+}
+
+.blog-category:after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #0074C8;
+    width: 60px;
+    margin: 30px auto;
+}
+
+.blog-category:last-child:after {
+    display: none !important; 
+}
+
+.blog-category h2,
+.blog-category h3,
+.blog-category h1,
+.blog-category p,
+.blog-category span {
+    text-align: left;
+}
+
+.blog-category > .row {
+    margin: 0;
+}
+
+.blog-category h2:after, .blog-category h3:after, .blog-category h4:after, .blog-category h5:after, .blog-category h6:after {
+    display: none;
+}
+
+.blog-category .col-md-8 .feature-post {
+    overflow: hidden;
+}
+
+.blog-category .col-md-8 .feature-post .attachment-post-thumbnail.wp-post-image {
+    transition: transform .1s; /* Animation */
+    opacity: .9;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+.blog-category img:hover {
+    opacity: .9!important;
+}
+
+.blog-category .col-md-8 .feature-post .attachment-post-thumbnail.wp-post-image:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.blog-category .col-md-8 .feature-post {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.blog-category .col-md-8 .feature-post .main-feature-excerpt {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 60px 15px 15px 15px;
+    background: -webkit-linear-gradient(top,transparent 0,transparent 2%,#000 100%);
+    background: -webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(2%,transparent),to(black));
+    background: -o-linear-gradient(top,transparent 0,transparent 2%,#000 100%);
+    background: linear-gradient(to bottom,transparent 0,transparent 2%,#000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000', GradientType=0 );
+}
+
+.blog-category .col-md-8 .feature-post .main-feature-excerpt h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: none;
+    text-align: left;
+}
+
+.blog-category .col-md-8 .feature-post .main-feature-excerpt h3:after {
+    display: none;
+}
+
+.blog-category .col-md-8 .feature-post .main-feature-excerpt p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.blog-category a.read-more,
+.blog-category p.read-more {
+    color: #999!important;
+    font-size: 14px;
+}
+
+.blog-category a.read-more:hover,
+.blog-category p.read-more:hover {
+    color: #777!important;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.older-posts p {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 5px 0!important;
+}
+.blog-category .side-posts h4 {
+    text-align: left;
+    text-transform: inherit;
+}
+
+.blog-category .side-posts a .row {
+    min-height: 100px;
+}
+
+.blog-category .side-posts a .row .col-md-5 img {
+    min-width: 100%;
+    max-height: 90px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .row.older-posts .other-posts.col-sm-4 > a > .row.older-posts-mobile img {
+        max-height: 160px;
+        min-height: 160px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .row.older-posts .other-posts.col-sm-4 > a > .row.older-posts-mobile img {
+        max-height: 90px;
+        min-height: 90px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
+.blog-flexible .page-error > div.col-md-12 {
+    margin-top: 100px;
+}
+
+.page-title-error-blog {
+    font-size: 36px;
+    text-align: center;
+}
+
+.page-title-error-blog::after {
+    display: none;
+}
+
+
+.blog-category .feature-post > .post-details > a img{
+    min-width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: top;
+}
