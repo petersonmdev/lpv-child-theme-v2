@@ -520,7 +520,7 @@
                             <div class="popular">
                                 <?= $product_destak_title ?>
                             </div>
-                            <div class="featured">
+                            <div class="featured" style="padding-top: 25px;">
                             <?php else: ?>
                                 <div class="<?= $count == 3 ? 'col-md-4' : 'col-md-3 offers-common'; ?> text-center">
                                     <div class="no">
