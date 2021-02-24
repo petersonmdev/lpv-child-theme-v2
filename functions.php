@@ -170,29 +170,6 @@ remove_action( 'woocommerce_checkout_order_review', 'woocommerce_checkout_paymen
 add_action( 'woocommerce_checkout_billing', 'woocommerce_checkout_payment', 5 );
 // fim trocar botão
 
-
-// GARANTIA ESTENDIDA
-
-add_action( 'wp_footer', 'woocommerce_add_gift_box' );
-function woocommerce_add_gift_box() {
-    //if (is_checkout()) {
-    ?>
-    <!--<script type="text/javascript">
-    //jQuery( document ).ready(function( $ ) {
-        //$('#add_gift_box').click(function(){
-            //jQuery('body').trigger('update_checkout');
-        //});
-
-        //var taxa_garantia = "<?php //echo number_format(get_field('garantia_custo_extra', 'option'), 2, '.', ','); ?>"; //pega o valor do custo extra no custom fields - customizações do thema 
-        //var parcelas = $('#pagarme-installments option:last').val();
-        //var calc = ( parseFloat(taxa_garantia) / parcelas ); calc = calc.toFixed(2).replace('.', ',');
-        //$('#extra-cost-label').html('Proteja sua entrega por apenas '+ parcelas +'x de R$ '+ calc);
-    //});
-    </script>-->
-    <?php
-    //}
-}
-
 add_action( 'woocommerce_cart_calculate_fees', 'woo_add_cart_fee' );
 function woo_add_cart_fee( $cart ){
     if ( ! $_POST || ( is_admin() && ! is_ajax() ) ) {
@@ -346,28 +323,28 @@ function action_woocommerce_review_order_before_payment(  ) {
         <script>
             /** */
             /** atualiza para sem juros no select de parcelas */            
-            $("#pagarme-installments option").each(function(){
-                var str = $(this).text();
+            jQuery("#pagarme-installments option").each(function(){
+                var str = jQuery(this).text();
                 var find = '(';
                 var indexOfFirst = str.indexOf(find);
                 res = str.substring(indexOfFirst, -1);
                 //alert( res );
-                $(this).html(res+' (sem juros)');
+                jQuery(this).html(res+' (sem juros)');
             });
             
-            var parcelas = $('#pagarme-installments option:last').val(); // pega a maior parcela           
-            $('#pagarme-installments option:last').prop('selected',true); // marca a maior parcela como default
-            $('#pagarme-installments option:first').prop('hidden',true); // Esconder o opção zerada
+            var parcelas = jQuery('#pagarme-installments option:last').val(); // pega a maior parcela           
+            jQuery('#pagarme-installments option:last').prop('selected',true); // marca a maior parcela como default
+            jQuery('#pagarme-installments option:first').prop('hidden',true); // Esconder o opção zerada
             
-            $("label[for='pagarme-card-holder-name']").html("Nome impresso no cartão"); // muda o label  do campo nome do cartão
-            $("#billing_address_2_field > label").html("Complemento"); // muda o label do campo endereço 2 p/ Complemento
+            jQuery("label[for='pagarme-card-holder-name']").html("Nome impresso no cartão"); // muda o label  do campo nome do cartão
+            jQuery("#billing_address_2_field > label").html("Complemento"); // muda o label do campo endereço 2 p/ Complemento
 
-            $('#pagarme-installments').change(function(event) {
-              var active = $(this, 'option:selected').val();              
-              $( document ).ajaxComplete(function(){
-                $("#pagarme-installments option").each(function(){
-                    if ($(this).val() == active) {
-                        $(this).prop('selected', true);
+            jQuery('#pagarme-installments').change(function(event) {
+              var active = jQuery(this, 'option:selected').val();              
+              jQuery( document ).ajaxComplete(function(){
+                jQuery("#pagarme-installments option").each(function(){
+                    if (jQuery(this).val() == active) {
+                        jQuery(this).prop('selected', true);
                     }    
                 });
               });

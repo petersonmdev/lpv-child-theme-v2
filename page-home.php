@@ -249,11 +249,6 @@
 <!-- ///////////////////////////////////////////////////////
 /////////  BLOCO 6
 //////////////////////////////////// -->
-<?php
-    $this_site = get_home_url();
-    if(strpos($this_site, 'phenatrim') == true): ?>
-<!-- ////// BLOCO DO PHENATRIM
-/////////////////////////////////// -->
 <section id="medical-authority" class="three section-stats bg-gray">
     <div id="authority" style="background: url('<?php the_field('s6_imagem'); ?>') right -100px bottom no-repeat; background-size: auto 90%;padding-bottom: 100px"></div>
 
@@ -281,42 +276,6 @@
         </div>
     </div>
 </section>
-
-<?php else: ?>
-<!-- ////// BLOCO DAS DEMAIS LOJAS
-/////////////////////////////////// -->
-<section class="section-stats bg-gray ">
-    <div class="container">
-        <div class="row">
-            <h2><?php the_field('s6_titulo') ?></h2>
-            <div class="hidden-md hidden-lg col-xs-12 col-sm-12">
-                <img src="<?php the_field('s6_imagem') ?>" alt="" class="img-medic img-medic-m">
-            </div>
-            <div class="col-md-8 col-lg-8 col-md-offset">
-                <?php the_field('s6_texto') ?>
-            </div>
-            <div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
-                <img src="<?php the_field('s6_imagem'); ?>" alt="" class="img-medic">
-            </div>
-        </div>
-
-        <!-- CTA do bloco 6 -->
-        <div class="big-text mobile-460">
-            <a href="#order" class="btn btn-secondary cta-2 page-scroll">
-                <?php the_field('s6_texto_botao') ?>
-            </a>
-        </div>
-        <div class="big-text mobile-460-m">
-            <a href="#order" class="btn btn-secondary cta-2 page-scroll">
-                <?php the_field('s6_texto_botao') ?>
-            </a>
-        </div>
-        <!-- Fim CTA do bloco 6 -->
-
-    </div>
-</section>
-
-<?php endif;?>
 
 <!-- /////////////   FIM BLOCO 6
 ///////////////////////////////////////////// -->

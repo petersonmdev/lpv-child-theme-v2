@@ -47,15 +47,6 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 						</div>
 						<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 					</div>
-					<!-- GARANTIA ESTENDIDA BOTÃO -->
-					<!-- <div id="message_fields">
-						<p class="form-row add_gift_box form-row-wide" id="add_gift_box_field" data-priority="">
-							<label class="checkbox">
-								<input type="checkbox" class="input-checkbox" name="add_gift_box" id="add_gift_box" value="1" checked>
-								<span id="extra-cost-label"></span>
-							</label>
-						</p>
-					</div> -->
 				</div>
 			</div>
 			<div class="col-sm-12 col-md-5">

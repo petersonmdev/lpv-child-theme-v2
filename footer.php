@@ -13,7 +13,7 @@ if(is_checkout()):
 
 <script type="text/javascript">
   jQuery(document).ready(function($){
-    $("#billing_address_2").attr('maxlength','20');
+    jQuery("#billing_address_2").attr('maxlength','20');
   });
 </script>
 
@@ -21,14 +21,14 @@ if(is_checkout()):
 
 <!-- parcelamento pagina thank you -->
 <script type="text/javascript">  
-  $( document ).ready(function(){
-    parcelas = $('#pagarme-installments option:last').val(); //$('.woocommerce-message span').text().slice(-3);
+  jQuery( document ).ready(function(){
+    parcelas = jQuery('#pagarme-installments option:last').val(); //$('.woocommerce-message span').text().slice(-3);
     parcelas = parseFloat(parcelas.charAt(0));
     if (parcelas != 1) {
-    $(".amount").each( function() {
-       var real = parseFloat($(this).text().replace('R$', '').replace(',', '.') / parcelas) ;
+    jQuery(".amount").each( function() {
+       var real = parseFloat(jQuery(this).text().replace('R$', '').replace(',', '.') / parcelas) ;
         if (real > 1) {
-          $(this).html(parcelas + 'x de R$ ' + real.toFixed(2).replace('.', ','));
+          jQuery(this).html(parcelas + 'x de R$ ' + real.toFixed(2).replace('.', ','));
         }
       })
     };
@@ -42,23 +42,23 @@ if(is_checkout()):
 <!-- scroll para erro formulario pagarme -->
 <script type="text/javascript">
 
-  $('#place_order').on('click',function(){
+  jQuery('#place_order').on('click',function(){
     setTimeout(function(){
       //if is any error found. then do this
-      $(document).scrollTop($('.woocommerce-error').offset().top);
+      jQuery(document).scrollTop(jQuery('.woocommerce-error').offset().top);
     }, 100);
   });
 
 </script>
 
 <script type="text/javascript">
-  $( document ).ajaxComplete(function(){
-    parcelas = $('#pagarme-installments option:last').val();
-    $(".amount").each( function() {
-      var real = parseFloat($(this).text().replace('R$', '').replace(',', '.')) / parcelas;
+  jQuery( document ).ajaxComplete(function(){
+    parcelas = jQuery('#pagarme-installments option:last').val();
+    jQuery(".amount").each( function() {
+      var real = parseFloat(jQuery(this).text().replace('R$', '').replace(',', '.')) / parcelas;
       if (real > 1) {
 
-        $(this).html(parcelas+'x de &nbsp;&nbsp;&nbsp; R$ ' + real.toFixed(2).replace('.', ','));
+        jQuery(this).html(parcelas+'x de &nbsp;&nbsp;&nbsp; R$ ' + real.toFixed(2).replace('.', ','));
       }
     });
   });
@@ -99,11 +99,11 @@ if(is_checkout()):
   </div>
 </footer>
 <script type="text/javascript">
-  $( document ).ready(function(){
-    parcelas = $('#pagarme-installments option:last').val();
-    $(".precofinal").each( function() {
-       var real = parseFloat($(this).text().replace('R$', '').replace(',', '.')) / parcelas;
-       $(this).html(parcelas+'x R$ ' + real.toFixed(2).replace('.', ','));
+  jQuery( document ).ready(function(){
+    parcelas = jQuery('#pagarme-installments option:last').val();
+    jQuery(".precofinal").each( function() {
+       var real = parseFloat(jQuery(this).text().replace('R$', '').replace(',', '.')) / parcelas;
+       jQuery(this).html(parcelas+'x R$ ' + real.toFixed(2).replace('.', ','));
       });
   });
 </script>

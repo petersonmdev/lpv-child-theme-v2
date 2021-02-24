@@ -1,9 +1,6 @@
 /*
 =================================================================
-Developer front-end: Peterson Macedo
-Developer back-end: Felipe Ribeiro
-Date: 26/03/2018
-Life Health
+Developer: Peterson Macedo
 MEDrx [loja-page]
 =================================================================
 */
@@ -13,7 +10,6 @@ MEDrx [loja-page]
 }
 
 #shop .products {
-    background: url(../imagens/misty_forest.jpg) no-repeat;
     background-size: cover;
     padding: 50px 0 0;
     text-align: center;

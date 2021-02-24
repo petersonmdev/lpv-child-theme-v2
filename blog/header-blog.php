@@ -6,9 +6,6 @@
  *
  * @package storefront
  */
-   
-    $this_site = get_home_url();
-    $is_phenatrim = 'phenatrim'; //verifica se está no site phenatrim, se estiver aplica algumas propriedades específicas dele, como telefone e bloco de autoridade médica; 
 
 ?>
 <!doctype html>
@@ -23,19 +20,19 @@
 
     <?php wp_head(); ?>
 
-    <?php if(is_page('checkout')): ?>
+    <?php if(is_checkout()): ?>
     <!-- boostrap css e js -->
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/bootstrap/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/bootstrap/bootstrap-grid.min.css" media="screen" rel="stylesheet" type="text/css">
     <?php endif; ?>
 
     <!-- Bibliteca landPage -->
-    <link rel="stylesheet" href=<?php echo get_stylesheet_directory_uri(); ?>/assets/css/main.css>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400" rel="stylesheet">
 
-    <link rel="stylesheet" href=<?php echo get_stylesheet_directory_uri(); ?>/assets/css/animate.css></script>
-    <script src=<?php echo get_stylesheet_directory_uri(); ?>/assets/js/bootstrap-notify.min.js></script>
-    <script src=<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.js></script>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/animate.css">
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/bootstrap-notify.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.js"></script>
     <?php get_template_part( 'style', 'custom' ); ?>
     <!-- Fim da Biblioteca do site -->
 
@@ -99,8 +96,8 @@
               <div class="col-md-12">
                 <ul class="list-inline header-options text-right">
                   <li>
-                    <span class="click-to-call hidden-sm hidden-md hidden-lg"><span class="glyphicon glyphicon-earphone"></span> FALE CONOSCO: <?php echo strpos($this_site, $is_phenatrim) == true? '(62) 3639-2978': '(62) 3639-2975'?></span>
-                    <span class="call-us hidden-xs"><span class="glyphicon glyphicon-earphone"></span> FALE CONOSCO: <?php echo strpos($this_site, $is_phenatrim) == true? '(62) 3639-2978': '(62) 3639-2975'?></span>
+                    <span class="click-to-call hidden-sm hidden-md hidden-lg"><span class="glyphicon glyphicon-earphone"></span> FALE CONOSCO: (62) 3639-2975</span>
+                    <span class="call-us hidden-xs"><span class="glyphicon glyphicon-earphone"></span> FALE CONOSCO: (62) 3639-2975</span>
                   </li>
                 </ul>
               </div>

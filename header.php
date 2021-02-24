@@ -1,16 +1,3 @@
-<?php
-/**
- * The header for our theme.
- *
- * Displays all of the <head> section and everything up till <div id="content">
- *
- * @package storefront
- */
-   
-    $this_site = get_home_url();
-    $is_phenatrim = 'phenatrim'; //verifica se está no site phenatrim, se estiver aplica algumas propriedades específicas dele, como telefone e bloco de autoridade médica; 
-
-?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
   <head>
@@ -22,12 +9,12 @@
     <?php endif; ?>
 
     <?php wp_head(); ?>    
-    <link rel="stylesheet" href=<?php echo get_stylesheet_directory_uri(); ?>/assets/css/__development.css>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/__development.css">
     <!-- <link rel="stylesheet" href=<?php //echo get_stylesheet_directory_uri(); ?>/assets/css/__all_styles_production.min.css> -->
     <?php get_template_part( 'style', 'custom' ); ?>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src=<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.js></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.js"></script>
 
    
     <!-- //////////////////////////////////////////////////////////////////
@@ -94,7 +81,7 @@
             <div class="row">
               <div class="hidden-xs col-sm-6 col-md-6 col-lg-6" >
                 <div class="col-xs-3 col-md-2 col-lg-2">
-                  <img src=<?php echo get_stylesheet_directory_uri(); ?>/assets/imagens/lock-cert.png alt="" class="img-responsive list-icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imagens/lock-cert.png" alt="" class="img-responsive list-icon">
                 </div>
                 <div class="col-lg-10 col-md-10 col-xs-9 list-column">
                   <span class="list-titles"><strong>Garantia de satisfação</strong></span>

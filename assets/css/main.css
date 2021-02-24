@@ -3939,6 +3939,10 @@ tbody.collapse.in {
 	clear: both
 }
 
+.navbar-header {
+	background: #fff;
+}
+
 .navbar-header:after, .navbar-header:before {
 	content: " ";
 	display: table
@@ -6378,8 +6382,6 @@ body {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
-	/*background: url(../imagens/header-line.png) top repeat-x;*/
-	/*padding-top: 10px*/
 }
 
 @media (min-width:768px) {
@@ -6589,7 +6591,6 @@ section h2:after, section h3:after, section h4:after, section h5:after, section 
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: url(../imagens/faixas/detalhe.png);
 	background-repeat: no-repeat;
 	display: block
 }
@@ -6606,7 +6607,6 @@ section h2:after, section h3:after, section h4:after, section h5:after, section 
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: url(../imagens/spritesheet.png);
 	background-repeat: no-repeat;
 	display: block
 }
@@ -6751,7 +6751,6 @@ section h2:after, section h3:after, section h4:after, section h5:after, section 
 }
 
 .navbar-brand {
-	background: url(../imagens/sibuterol-logo.png) no-repeat;
 	display: block;
 	text-indent: -9999px;
 	width: 93px;
@@ -7439,7 +7438,6 @@ a.cart-contents {
 }
 
 .section-order-pattern {
-	background: url(../imagens/bg-pattern.png) top repeat-x #E7373F;
 	height: 30px
 }
 
@@ -8038,25 +8036,10 @@ a.cart-contents {
 	}
 }
 
-@-moz-document url-prefix() {
-	.checkbox.terms input[type=checkbox] {
-		zoom: 1.5;
-		-webkit-zoom: 1.5;
-		-moz-transform: scale(1.5, 1.5);
-		-moz-transform-origin: left center;
-		border: none!important;
-		-ms-appearance: none;
-		margin-left: -30px!important;
-		margin-top: 8px
-	}
-}
-
 @media (max-width:991px) {
 	.woocommerce table.shop_table th {
 		padding: 9px 2px;
 		text-align: center;
-/*		font-size: .8em
-*/		
 }
 	.woocommerce table.shop_table th.product-name {
 		padding: 9px 12px 9px 0
@@ -8881,31 +8864,6 @@ div.web_seal.seal {
 	}
 }
 
-#fancybox-loading, .fancybox-close, .fancybox-next span, .fancybox-prev span {
-	background-image: url(../images/fancybox/fancybox_sprite.png)
-}
-
-#fancybox-loading div {
-	background: url(../images/fancybox/fancybox_loading.gif) center center no-repeat
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio:1.5), only screen and (min--moz-device-pixel-ratio:1.5), only screen and (min-device-pixel-ratio:1.5) {
-	#fancybox-loading, .fancybox-close, .fancybox-next span, .fancybox-prev span {
-		background-image: url(../images/fancybox/fancybox_sprite@2x.png)
-	}
-	#fancybox-loading div {
-		background-image: url(../images/fancybox/fancybox_loading@2x.gif)
-	}
-}
-
-.fancybox-nav {
-	background: transparent url(../images/fancybox/blank.gif)
-}
-
-.fancybox-overlay {
-	background: url(../images/fancybox/fancybox_overlay.png)
-}
-
 #order-inner {
 	display: block
 }
@@ -9130,7 +9088,6 @@ h2 span.bigger:after {
 
 #test-007.section-order .s1-panel .col-sm-4:last-child .product-image:before {
 	content: "";
-	background-image: url(../imagens/arrow-savings.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: 144px 43px;
 	background-size: 144px 43px;
@@ -9143,7 +9100,6 @@ h2 span.bigger:after {
 
 @media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min--moz-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2 / 1), only screen and (min-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2/1), only screen and (min-resolution:192dpi), only screen and (min-resolution:2dppx) {
 	#test-007.section-order .s1-panel .col-sm-4:last-child .product-image:before {
-		background-image: url(../imagens/arrow-savings%402x.png);
 		-webkit-background-size: 144px 43px;
 		background-size: 144px 43px
 	}
@@ -9298,7 +9254,6 @@ h2 span.bigger:after {
 
 #test-007.section-order .s2-panel .subtitle+div:before {
 	content: "";
-	background-image: url(../imagens/arrow-subscribe.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: 148px 52px;
 	background-size: 148px 52px;
@@ -9311,7 +9266,6 @@ h2 span.bigger:after {
 
 @media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min--moz-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2 / 1), only screen and (min-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2/1), only screen and (min-resolution:192dpi), only screen and (min-resolution:2dppx) {
 	#test-007.section-order .s2-panel .subtitle+div:before {
-		background-image: url(../imagens/arrow-subscribe%402x.png);
 		-webkit-background-size: 148px 52px;
 		background-size: 148px 52px
 	}
@@ -9422,7 +9376,6 @@ h2 span.bigger:after {
 
 #test-007.section-order .s2-panel #gifts-avail .gift-1 .gift-image:before {
 	content: "";
-	background-image: url(../imagens/arrow-shaker.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: 141px 49px;
 	background-size: 141px 49px;
@@ -9435,7 +9388,6 @@ h2 span.bigger:after {
 
 @media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min--moz-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2 / 1), only screen and (min-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2/1), only screen and (min-resolution:192dpi), only screen and (min-resolution:2dppx) {
 	#test-007.section-order .s2-panel #gifts-avail .gift-1 .gift-image:before {
-		background-image: url(../imagens/arrow-shaker%402x.png);
 		-webkit-background-size: 141px 41px;
 		background-size: 141px 41px
 	}
@@ -9477,7 +9429,6 @@ h2 span.bigger:after {
 
 #test-007.section-order .s2-panel #gifts-avail .gift-2 .gift-image:before {
 	content: "";
-	background-image: url(../imagens/arrow-multivits.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: 167px 54px;
 	background-size: 167px 54px;
@@ -9490,7 +9441,6 @@ h2 span.bigger:after {
 
 @media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min--moz-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2 / 1), only screen and (min-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2/1), only screen and (min-resolution:192dpi), only screen and (min-resolution:2dppx) {
 	#test-007.section-order .s2-panel #gifts-avail .gift-2 .gift-image:before {
-		background-image: url(../imagens/arrow-multivits%402x.png);
 		-webkit-background-size: 167px 54px;
 		background-size: 167px 54px
 	}
@@ -9532,7 +9482,6 @@ h2 span.bigger:after {
 
 #test-007.section-order .s2-panel #gifts-avail .gift-3 .gift-image:before {
 	content: "";
-	background-image: url(../imagens/arrow-capsiplex.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: 161px 53px;
 	background-size: 161px 53px;
@@ -9545,7 +9494,6 @@ h2 span.bigger:after {
 
 @media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min--moz-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2 / 1), only screen and (min-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2/1), only screen and (min-resolution:192dpi), only screen and (min-resolution:2dppx) {
 	#test-007.section-order .s2-panel #gifts-avail .gift-3 .gift-image:before {
-		background-image: url(../imagens/arrow-capsiplex%402x.png);
 		-webkit-background-size: 161px 53px;
 		background-size: 161px 53px
 	}
@@ -9889,264 +9837,6 @@ ul li {
 	 border-radius: 10px;
 }
 
-
-
-/*
-.cta_verde .btn-secondary {
-	font-size: 20px;
-}
-
-.cta_laranja .btn-secondary {
-	font-size: 20px;
-}
-
-.cta_laranja .btn-secondary {
-	color: #fff;
-	background-color: #FF9326;
-	border-bottom: 3px solid #FF8000;
-	text-transform: uppercase
-}
-
-.cta_laranja .btn-secondary:hover {
-	color: #fff;
-	background-color: #FF8000;
-	border-bottom: 3px solid #EA7500
-}
-*/
-/* 
-.bg_laranja {
-	background: #FF9326;
-	border-bottom: 1px solid #eee
-}
-
-.bg_imagem {
-	background-image: url("../imagens/bg-mulher-1024px.png");
-	background-repeat: no-repeat;
-}
-
-@media (min-width:1024px) {
-	.bg_imagem {
-		background-image: url("../imagens/bg-mulher.png");
-	}
-}
-
-.bloco-1 {
-	padding: 60px 0 40px 0
-}
-
-@media (min-width:768px) {
-	.bloco-1 {
-		padding: 80px 0 40px 0
-	}
-}
-
-@media (min-width:992px) {
-	.bloco-1 {
-		padding: 80px 0 60px 0
-	}
-}
-
-@media (min-width:1200px) {
-	.bloco-1 {
-		padding: 80px 0 80px 0
-	}
-}
-
-.bloco-1 {
-	margin-top: 70px
-}
-
-.bloco-1 img {
-	margin: 0 auto
-}
-
-.bloco-1 h1 {
-	font-size: 30px
-}
-
-ul li {
-	list-style-type: none
-}
-
-.ul-beneficios {
-	line-height: 32px;
-	font-weight: normal;
-	margin: 0 0 30px 0;
-}
-
-.ul-beneficios li{
-	font-weight: normal;
-	font-size: 20px;
-}
-
-.ul-beneficios li img{
-	margin-right: 5px
-}
-
-.mast-hero {
-	position: relative
-}
-
-.mast-hero {
-	padding: 0;
-	margin: 0;
-	background: url(../imagens/banner-768.jpg) center top no-repeat #000
-}
-
-.mast-hero .custom-button {
-	line-height: 24px
-}
-
-@media screen and (max-width: 480px) {
-	.mast-hero .container-fluid,
-	.mast-hero .hero-headline,
-	.mast-hero .ul-beneficios {
-		padding: 0!important;
-	}
-	.mast-hero .hero-headline {
-		font-size: 20px;!important: 
-	}
-	.mast-hero .ul-beneficios li{
-		font-size: 16px!important;
-	}
-	
-}
-
-@media screen and (max-width: 320px) {
-	.mast-hero .ul-beneficios li{
-		font-size: 14px!important;
-	}
-	.ul-beneficios {
-		line-height: 28px;
-		margin:0 0 10px 0;
-	}
-}
-
-@media only screen and (min-width: 48em) {
-	body {
-		font-size: 20px;
-		line-height: 24px
-	}
-	ul.simple-toggle {
-		display: block
-	}
-	#mobile-nav,
-	.anchor-link {
-		display: none
-	}
-	.mast-hero {
-		background: url(../imagens/banner.png) center top no-repeat #000
-	}
-	.hero-bottle {
-		width: 210px;
-		height: 275px;
-		background: url(https://phsrow-optimumnutrainc.netdna-ssl.com/images/bottle-bundle.png) center top no-repeat
-	}
-	.hero-copy {
-		font-size: 1.25rem;
-		margin-bottom: 2rem
-	}
-	.col-xs-6 {
-		-ms-flex-preferred-size: 50%;
-		flex-basis: 50%;
-		max-width: 50%
-	}
-	h2 {
-		font-size: 2.4rem;
-		line-height: 2.6rem;
-		text-align: left
-	}
-	.site-logo a {
-		width: 185px;
-		height: 45px;
-		margin: 10px 0
-	}
-	.header-phone {
-		display: block
-	}
-	.promotion {
-		height: 70px
-	}
-	.promotion p {
-		line-height: 70px;
-		font-size: 30px
-	}
-	.mast-hero .custom-button {
-		line-height: 36px
-	}
-	.hero-headline {
-		font-size: 25px;
-	}
-	.content-whats p {
-		height: 180px;
-	}
-}
-
-@media only screen and (min-width: 64em) {
-	a.custom-button,
-	a.custom-button:link,
-	a.custom-button:visited {
-		font-size: 20px
-	}
-	.page-nav {
-		height: 90px
-	}
-	.site-logo a {
-		width: 235px;
-		height: 58px;
-		margin: 16px 0
-	}
-	.hero-headline {
-		font-size: 28px;
-	}
-	.hero-copy {
-		margin-left: 30px
-	}
-	.hero-bottle {
-		right: 60px;
-		top: 215px;
-		width: 210px;
-		height: 275px
-	}
-	.mast-hero a.custom-button {
-		line-height: 34px;
-		font-size: 28px;
-		margin-left: 150px;
-		max-width: 300px
-	}
-	.header-phone {
-		top: 12px
-	}
-	ul.simple-toggle li a {
-		font-size: 1.5rem;
-		padding: 10px
-	}
-	.col-halfwidth {
-		width: 50%;
-		float: left
-	}
-	.product-block .col-xs-6 {
-		flex-basis: 50%;
-		max-width: 50%
-	}
-	.product-block h3 {
-		float: left;
-		font-size: 120%;
-		text-align: left;
-		margin-left: 10px;
-	}
-	a.custom-button span.add-to-cart,
-	a.custom-button span.padlock {
-		width: 30px;
-		height: 30px;
-		margin-right: 10px
-	}
-	.content-whats p {
-		height: 230px;
-	}
-}
-*/
-
 @media (min-width:768px) {
 	.navbar-right .dropdown-menu {
 		right: 0;
@@ -10191,28 +9881,6 @@ ul li {
 		padding-right: 0
 	}
 }
-/*
-@media (min-width:769px) and (max-width:991px) {
-	.navbar-collapse {
-		position: absolute;
-		top: 80px;
-		background: #fff;
-		width: 100%
-	}
-	.navbar-collapse li {
-		border-bottom: 1px solid #001E67
-	}
-	.navbar-collapse .navbar-nav {
-		margin-top: 0;
-		margin-bottom: 0
-	}
-	.navbar-collapse .navbar-nav li a {
-		padding-top: 15px;
-		padding-bottom: 15px;
-		font-size: 18px
-	}
-}
-*/
 
 @media (max-width:767px) {/*estava 768px oq gera um bug na navbar*/
 	.navbar-collapse {
@@ -11795,7 +11463,6 @@ body.woocommerce-checkout > #page > div.container {
 }
 
 #page > header > div.topbar {
-	background: url(../imagens/header-line.png) top repeat-x;
     padding-top: 10px;
 }
 
