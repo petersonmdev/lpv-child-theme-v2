@@ -16,6 +16,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.js"></script>
 
+    <script type='text/javascript'>
+      /* <![CDATA[ */
+      var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View Cart","cart_url":"https:\/\/slenzarx.com\/carrinho\/","is_cart":"","cart_redirect_after_add":"yes"};
+      /* ]]> */
+    </script>
+
    
     <!-- //////////////////////////////////////////////////////////////////
     ////////////// PIXEL GOOGLE ANALYTICS
