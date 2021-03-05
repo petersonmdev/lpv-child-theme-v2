@@ -2,6 +2,6 @@
 
 get_header();
 
-get_template_part('blog/category-blog');
+get_template_part('template-parts/category-blog');
 
 get_footer();

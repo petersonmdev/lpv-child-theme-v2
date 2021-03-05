@@ -588,6 +588,12 @@ h2.section-title-order {
 	line-break: anywhere;
 }
 
+article.type-post h1.entry-title {
+	display: block;
+}
+
+nav#post-navigation,
+section#comments,
 article h1.entry-title {
 	display: none;
 }
