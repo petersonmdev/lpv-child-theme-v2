@@ -128,10 +128,10 @@ else: ?>
    <div class="row">
       <div id="primary">
          <main id="main" class="page-error">
-            <div class="col-md-12">
-               <header>
+            <div class="col-md-12 py-5">
+               <div>
                   <h1 class="page-title page-title-error-blog"><?php esc_html_e( 'Oops! Não existem publicações.', 'storefront' ); ?></h1>
-               </header>
+               </div>
                <!-- .page-header -->
                <p style="text-align: center;">
                   <?php esc_html_e( 'Nenhum artigo foi publicado!', 'storefront' ); ?>
