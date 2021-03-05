@@ -108,8 +108,7 @@ section.section-checkout-icon .list-column {
 	align-items: center;
 	padding-bottom: 8px;
 	padding-top: 8px;
-	font-size: 12px;
-	font-weight: 900;
+	font-size: 1em;
 	color: var(--text-color-default);
 	text-transform: uppercase;
 }
@@ -260,11 +259,18 @@ section.section-checkout-icon i:before {
 	font-size: 1em!important;
 	padding: 8px;
 	color: var(--text-color-default);
-	background: transparent;
-	border-radius: 0;
+	background: #fff;
+	border-radius: 3px;
 	box-shadow: none;
 	border: 1px solid #bcbcbc;
 	height: auto;
+}
+
+.woocommerce-billing-fields p.validate-required label abbr.required,
+.woocommerce-shipping-fields p.validate-required label abbr.required,
+.payment_box p label .required {
+	color: red;
+	text-decoration: none;
 }
 
 .woocommerce-billing-fields input:focus,

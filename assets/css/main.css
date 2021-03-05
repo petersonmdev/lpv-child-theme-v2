@@ -107,6 +107,7 @@ header:after {
 
 header {
 	padding-top: 12px;
+	background: #f8f9fa;
 }
 
 .navbar-nav li a.nav-link {
