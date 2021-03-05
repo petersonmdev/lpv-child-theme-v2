@@ -2,7 +2,7 @@
 
 get_header(); ?>
 
-    <main class="pt-5 pb-5 main-jsprata">
+    <main class="<?php echo (!is_checkout()) ? 'pt-5' : '' ?> pb-5 main">
         <div class="container">
             <?php if(have_posts()){
                 while (have_posts()){
