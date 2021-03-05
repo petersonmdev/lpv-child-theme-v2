@@ -23,10 +23,10 @@ if ( ! is_ajax() ) {
 ?>
 <div id="payment" class="woocommerce-checkout-payment">
 	<?php if ( WC()->cart->needs_payment() ) : ?>
-		<header class="container-h3">
-			<h3>ETAPA FINAL</h3>
-			<h3>PAGAMENTO</h3>
-		</header>
+		<div class="title-form-checkout text-center py-2 py-md-3">
+			<h3 class="m-0">ETAPA FINAL</h3>
+			<h5 class="m-0">PAGAMENTO</h5>
+		</div>
 		<ul class="wc_payment_methods payment_methods methods">
 			<?php
 			if ( ! empty( $available_gateways ) ) {

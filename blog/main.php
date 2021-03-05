@@ -44,7 +44,7 @@ foreach ($categories as $key => $cat) : ?>
                         if(get_the_post_thumbnail()): 
                            the_post_thumbnail( 'large', array('class'=>'img-responsive') );
                         else: 
-                           echo '<img src="'.get_stylesheet_directory_uri().'/blog/assets/default-image.jpg" class="img-responsive" style="min-width:100%">';
+                           echo '<img src="'.get_stylesheet_directory_uri().'/assets/image/default-image.jpg" class="img-responsive" style="min-width:100%">';
                         endif;
                      ?>
                      <div class="main-feature-excerpt">
@@ -68,7 +68,7 @@ foreach ($categories as $key => $cat) : ?>
                               if(get_the_post_thumbnail()): 
                                  the_post_thumbnail( 'full', array('class'=>'img-responsive') );
                               else: 
-                                 echo '<img src="'.get_stylesheet_directory_uri().'/blog/assets/default-image.jpg" class="img-responsive">';
+                                 echo '<img src="'.get_stylesheet_directory_uri().'/assets/image/default-image.jpg" class="img-responsive">';
                               endif;
                            ?>
                         </div>
@@ -103,7 +103,7 @@ foreach ($categories as $key => $cat) : ?>
                         if(get_the_post_thumbnail()): 
                            the_post_thumbnail( 'full', array('class'=>'img-responsive') );
                         else: 
-                           echo '<img src="'.get_stylesheet_directory_uri().'/blog/assets/default-image.jpg" class="img-responsive">';
+                           echo '<img src="'.get_stylesheet_directory_uri().'/assets/image/default-image.jpg" class="img-responsive">';
                         endif;
                      ?>
                   </div>

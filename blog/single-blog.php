@@ -3,8 +3,6 @@
    $post_terms = get_the_terms( get_the_ID(), 'category');
    $all_terms = get_terms('category');
 
-   //print_r($post_terms);
-
 ?>
 
 <div class="blog-flexible">
@@ -26,7 +24,7 @@
                   if(get_the_post_thumbnail()): 
                      the_post_thumbnail( 'full', array('class'=>'img-responsive') );
                   else: 
-                     echo '<img src="'.get_stylesheet_directory_uri().'/blog/assets/default-image.jpg" class="img-responsive">';
+                     echo '<img src="'.get_stylesheet_directory_uri().'/assets/image/default-image.jpg" class="img-responsive">';
                   endif;
                ?>
                         
@@ -54,7 +52,7 @@
                                  if(get_the_post_thumbnail()): 
                                     the_post_thumbnail( 'full', array('class'=>'img-responsive') );
                                  else: 
-                                    echo '<img src="'.get_stylesheet_directory_uri().'/blog/assets/default-image.jpg" class="img-responsive">';
+                                    echo '<img src="'.get_stylesheet_directory_uri().'/assets/image/default-image.jpg" class="img-responsive">';
                                  endif;
                               ?>
                            </div>
@@ -92,7 +90,7 @@
                         if(get_the_post_thumbnail()): 
                            the_post_thumbnail( 'full', array('class'=>'img-responsive') );
                         else: 
-                           echo '<img src="'.get_stylesheet_directory_uri().'/blog/assets/default-image.jpg" class="img-responsive">';
+                           echo '<img src="'.get_stylesheet_directory_uri().'/assets/image/default-image.jpg" class="img-responsive">';
                         endif;
                      ?>
                   </div>

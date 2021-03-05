@@ -1,7 +1,7 @@
-<?php get_template_part('blog/header-blog'); ?>
+<?php 
 
+get_header();
 
-	<?php get_template_part('blog/main'); ?>
+get_template_part('blog/main');
 
-
-<?php get_template_part('blog/footer-blog'); ?>
+get_footer();

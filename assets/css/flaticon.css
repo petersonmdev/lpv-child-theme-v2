@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 13/02/2019 10:58
+  	Creation date: 04/03/2021 21:52
   	*/
 
 @font-face {
@@ -25,14 +25,32 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-        font-size: 20px;
-font-style: normal;
-margin-left: 20px;
+  font-size: 20px;
+  font-style: normal;
 }
 
-.flaticon-like:before { content: "\f100"; }
-.flaticon-truck:before { content: "\f101"; }
-.flaticon-shield:before { content: "\f102"; }
-.flaticon-padlock:before { content: "\f103"; }
-.flaticon-payment:before { content: "\f104"; }
-.flaticon-phone-call:before { content: "\f105"; }
+.flaticon-weight-scale:before { content: "\f100"; }
+.flaticon-no-junk-food:before { content: "\f101"; }
+.flaticon-diet:before { content: "\f102"; }
+.flaticon-lighting:before { content: "\f103"; }
+.flaticon-right-arrow:before { content: "\f104"; }
+.flaticon-call:before { content: "\f105"; }
+.flaticon-plus:before { content: "\f106"; }
+.flaticon-minus:before { content: "\f107"; }
+.flaticon-guarantee:before { content: "\f108"; }
+.flaticon-verified:before { content: "\f109"; }
+.flaticon-padlock:before { content: "\f10a"; }
+.flaticon-comment:before { content: "\f10b"; }
+.flaticon-truck:before { content: "\f10c"; }
+.flaticon-dollar:before { content: "\f10d"; }
+.flaticon-document:before { content: "\f10e"; }
+.flaticon-bowl:before { content: "\f10f"; }
+.flaticon-pharmacy:before { content: "\f110"; }
+.flaticon-clock:before { content: "\f111"; }
+.flaticon-atom:before { content: "\f112"; }
+.flaticon-renewable-energy:before { content: "\f113"; }
+.flaticon-check:before { content: "\f114"; }
+.flaticon-star:before { content: "\f115"; }
+.flaticon-credit-card:before { content: "\f116"; }
+.flaticon-phone-call:before { content: "\f117"; }
+.flaticon-like:before { content: "\f118"; }

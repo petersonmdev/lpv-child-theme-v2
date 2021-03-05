@@ -7,15 +7,61 @@
  *
  * If you don't plan to dequeue the Storefront Core CSS you can remove the subsequent line and as well
  * as the sf_child_theme_dequeue_style() function declaration.
- */
-//add_action( 'wp_enqueue_scripts', 'sf_child_theme_dequeue_style', 999 );
-/**
- * Dequeue the Storefront Parent theme core CSS
- */
-function sf_child_theme_dequeue_style() {
+**/
+
+add_action( 'wp_enqueue_scripts', 'lpv_scripts', 999 );
+function lpv_scripts() {
+    
+    wp_enqueue_style( 'style', get_stylesheet_uri() );
+
+    wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap/bootstrap.min.css', true );
+    wp_enqueue_style( 'bootstrap-grid', get_stylesheet_directory_uri() . '/assets/css/bootstrap/bootstrap-grid.min.css', true );
+
+    wp_enqueue_style( 'font-roboto-slab', get_stylesheet_directory_uri() . '/assets/fonts/roboto-slab.css', true );
+    wp_enqueue_style( 'font-flaticon', get_stylesheet_directory_uri() . '/assets/css/flaticon.css', true );    
+
+    if (is_checkout()) :
+        wp_enqueue_style( 'css-main', get_stylesheet_directory_uri() . '/assets/css/checkout.css', true );
+        wp_enqueue_script( 'js-checkout', get_stylesheet_directory_uri() . '/assets/js/checkout.js', true );
+    else :
+        wp_enqueue_style( 'css-main', get_stylesheet_directory_uri() . '/assets/css/main.css', true );
+        wp_enqueue_style( 'css-animate', get_stylesheet_directory_uri() . '/assets/css/animate.css', true );
+        wp_enqueue_style( 'css-blog', get_stylesheet_directory_uri() . '/assets/css/blog.css', true );
+    endif;
+
+    wp_enqueue_script( 'js-bootstrap-bundle-min', get_stylesheet_directory_uri() . '/assets/js/bootstrap.bundle.min.js', true );    
+
     wp_dequeue_style( 'storefront-style' );
     wp_dequeue_style( 'storefront-woocommerce-style' );
 }
+
+function get_excerpt($count){
+  $permalink = get_permalink($post->ID);
+  $excerpt = get_the_excerpt();
+  $excerpt = strip_tags($excerpt);
+  $excerpt = substr($excerpt, 0, $count);
+  $excerpt = $excerpt.'  [...]';
+  return $excerpt;
+}
+
+/* WORDPRESS DEFAULT SETTINGS */
+show_admin_bar(false);
+add_theme_support('post-thumbnails');
+add_theme_support('menus');
+add_theme_support('woocommerce', array(
+    'thumbnail_image_width' => 300,
+    'gallery_thumbnail_image_width' => 200,
+    'single_image_width' => 450,
+    )
+);
+add_theme_support('html5', array(
+'search-form',
+'comment-form',
+'comment-list',
+'gallery',
+'caption',
+));
+
 
 /**
  * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
