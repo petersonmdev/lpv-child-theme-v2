@@ -84,7 +84,7 @@
               <div class="col-6 col-sm-4 col-lg">
                 <div class="col-12 list-column">
                   <i class="flaticon-phone-call"></i>
-                  <span class="list-titles">Ligue para nós (62) 3639-2975</span>
+                  <span class="list-titles">Ligue para nós (62) 3954-5777</span>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@
         <div class="container">
           <div class="row">
             <div class="topbar col-12">
-              <a class="m-0 w-100 d-md-block d-none text-md-center text-lg-end" href="tel:6236392975"><i class="flaticon-call"></i> FALE CONOSCO: (62) 3639-2975</a>
+              <a class="m-0 w-100 d-md-block d-none text-md-center text-lg-end" href="tel:6239545777"><i class="flaticon-call"></i> FALE CONOSCO: (62) 3954-5777</a>
             </div>
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
