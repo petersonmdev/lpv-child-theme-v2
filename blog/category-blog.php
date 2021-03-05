@@ -8,7 +8,7 @@
 
 <div class="blog-flexible">
 
-   <section class="blog-category category-page container section-main">
+   <section class="blog-category category-page container py-4">
       <div class="row">
          <div class="col-md-8">
             <div class="row">

@@ -9,8 +9,7 @@
 }
 
 .blog-category:first-child {
-    padding-top: 80px!important;
-    margin-top: 70px;
+    padding-top: 40px!important;
 }
 
 .blog-category:after {
@@ -147,10 +146,6 @@
         object-fit: cover;
         object-position: 50% 50%;
     }
-}
-
-.blog-flexible .page-error > div.col-md-12 {
-    margin-top: 100px;
 }
 
 .page-title-error-blog {

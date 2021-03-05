@@ -15,7 +15,7 @@ if( $total_posts != 0 ):
 
 foreach ($categories as $key => $cat) : ?>
 
-   <section class="blog-category container section-main bg-white">
+   <section class="blog-category container section-main py-4">
       <div class="row">
          <!-- //////////////////////////
          // BLOCO PRINCIPAL - LISTAGEM POR CATEGORIAS -->

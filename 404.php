@@ -11,29 +11,16 @@ get_header(); ?>
 
   <main id="main" class="page-error">
 
-   <div class="container" style="margin-top: 160px;">
+   <div class="container py-5">
 
 
-     <header>
+     <div>
       <h1 class="page-title" style="font-size: 36px; text-align: center;"><?php esc_html_e( 'Oops! Esta página não existe.', 'storefront' ); ?></h1>
-     </header><!-- .page-header -->
+     </div><!-- .page-header -->
 
      <p style="text-align: center;">
       <?php esc_html_e( 'Nada encontrado neste local. Tente utilizar a busca.', 'storefront' ); ?>
      </p>
-
-     <?php
-     echo '<section aria-label="' . esc_html__( 'Search', 'storefront' ) . '" style="max-width: 60%;margin:0 auto; display: block"';
-
-     if ( storefront_is_woocommerce_activated() ) {
-      the_widget( 'WC_Widget_Product_Search' );
-     } else {
-      get_search_form();
-     }
-
-     echo '</section>';
-
-     ?>
 
    </div><!-- .error-404 -->
 

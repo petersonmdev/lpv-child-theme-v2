@@ -6,7 +6,7 @@
 ?>
 
 <div class="blog-flexible">
-   <section class="blog-category container section-main bg-white">
+   <section class="blog-category container section-main py-4">
       <div class="row">
 
          <div class="col-md-8">
