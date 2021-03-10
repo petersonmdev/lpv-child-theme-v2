@@ -1,14 +1,3 @@
-<?php
-/**
- * Template part for displaying posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package js_prata
- */
-
-?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class('pt-5 pb-5'); ?>">
 	<div class="container">
 	    <div class="entry-header">

@@ -545,8 +545,6 @@ $urls = array_diff( $urls, array( $emoji_svg_url ) );
 return $urls;
 }
 
-
-
 function my_deregister_scripts(){
  wp_dequeue_script( 'wp-embed' );
 }

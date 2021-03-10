@@ -314,6 +314,49 @@ section.section-checkout-icon i:before {
 	font-size: 1em;
 }
 
+/* Alterações checkout default Woo */
+
+/* .woocommerce .col2-set .col-1,
+.woocommerce .col2-set .col-2 {
+	display: initial;
+}
+
+.woocommerce form.woocommerce-checkout[name="checkout"] {
+	display: flow-root;
+}
+
+#customer_details {
+	width: 50%;
+	float: right;
+	background: #ececec;
+	border: solid 1px var(--primary-theme);
+	border-radius: 5px;
+}
+
+#customer_details:before {
+	content: 'Etapa Final';
+	width: 100%;
+	display: block;
+	text-align: center;
+	background: var(--primary-theme);
+	padding: 20px 15px;
+	font-size: 1.5em;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	text-transform: uppercase;
+}
+#order_review {
+	width: 48%;
+	padding: 20px;
+	border: solid 2px #8f8f8f;
+	border-radius: 5px;
+}
+
+#order_review_heading,
+.woocommerce-billing-fields h3 {
+	display: none;
+} */
+
 /* Page Thank You */
 .section-page-thankyou {
 	padding: 20px;
@@ -434,4 +477,19 @@ body.woocommerce-order-received table.woocommerce-table--order-details tfoot tr 
 		font-size: 1.5em;
 		font-weight: 700;
 	}
+
+	/* #customer_details {
+		width: 100%;
+	}
+
+	#order_review {
+		width: 100%;
+		padding: 15px;
+		margin-bottom: 15px;
+	}
+
+	.woocommerce form.woocommerce-checkout[name="checkout"] {
+		flex-direction: column-reverse;
+		display: flex;
+	} */
 }
