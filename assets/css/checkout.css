@@ -316,7 +316,7 @@ section.section-checkout-icon i:before {
 
 /* Alterações checkout default Woo */
 
-/* .woocommerce .col2-set .col-1,
+.woocommerce .col2-set .col-1,
 .woocommerce .col2-set .col-2 {
 	display: initial;
 }
@@ -355,7 +355,7 @@ section.section-checkout-icon i:before {
 #order_review_heading,
 .woocommerce-billing-fields h3 {
 	display: none;
-} */
+}
 
 /* Page Thank You */
 .section-page-thankyou {
