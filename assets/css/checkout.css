@@ -201,8 +201,9 @@ section.section-checkout-icon i:before {
 	margin: 0;
 }
 
+#order_review ul#shipping_method li:marker,
 #order_review ul#shipping_method li::marker {
-	content: '';
+	content: ''!important;
 }
 
 #order_review ul#shipping_method li label[for='shipping_method_0_flat_rate1'] {
