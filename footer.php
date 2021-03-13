@@ -3,7 +3,7 @@
     <footer class="pt-5">
       <div class="container">
         <div class="row">
-          <div class="col-12 text-center" style="color: #848484; font-size: 13px;">N1 SUPPLEMENTS COMÉRCIO E DISTRIBUIÇÃO LTDA, CNPJ: 32.017.806/000-189 | &copy; <?php echo date("Y")." ".get_bloginfo(); ?>. Todos direitos reservados.
+          <div class="col-12 text-center" style="color: #848484; font-size: 13px;">N1 SUPPLEMENTS COMÉRCIO E DISTRIBUIÇÃO LTDA, CNPJ: 32.017.806/0001-89 | &copy; <?php echo date("Y")." ".get_bloginfo(); ?>. Todos direitos reservados.
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@
         </div>
         <div class="row" style="background: #d8d8d8;">
           <div class="col-12 text-center" style="color: #848484; font-size: 13px; padding: 10px 20px;
-          line-height: 15px;">N1 SUPPLEMENTS COMÉRCIO E DISTRIBUIÇÃO LTDA, CNPJ: 32.017.806/000-189 | &copy; <?php echo date("Y")." ".get_bloginfo(); ?>. Todos direitos reservados.
+          line-height: 15px;">N1 SUPPLEMENTS COMÉRCIO E DISTRIBUIÇÃO LTDA, CNPJ: 32.017.806/0001-89 | &copy; <?php echo date("Y")." ".get_bloginfo(); ?>. Todos direitos reservados.
           </div>
         </div>
       </div>
