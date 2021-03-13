@@ -752,5 +752,7 @@ article h1.entry-title {
 	.btn-cta {
 		max-width: 280px;
 		padding: 6px 10px;
+		margin: 0 auto;
+		display: block;
 	}
 }
