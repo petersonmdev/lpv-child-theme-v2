@@ -206,6 +206,10 @@ section.section-checkout-icon i:before {
 	content: ''!important;
 }
 
+body.woocommerce-checkout ul li {
+	list-style-type: none!important;
+}
+
 #order_review ul#shipping_method li label[for='shipping_method_0_flat_rate1'] {
 	color: transparent
 }
