@@ -8,48 +8,15 @@
 
     <?php wp_head(); ?>
 
-    <!-- Global site tag (gtag.js) - Google Ads: 609568653 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-609568653"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-609568653');
-    </script>
-    
-    <!-- Cookies e identificação do usuário -->
-    <script type="text/javascript" >
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-191460005-1', { 'cookieDomain': 'slenzarx.com' } );
-      // Plugins
-      
-      ga('send', 'pageview');
-    </script>
-                
-    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <!-- Global site tag (gtag.js) - Google Ads -->
 
     <?php if(is_front_page()) : ?>
-      <!-- Page Home - [slenzarx.com/] -->
       <!-- Event snippet for Slenzarxcom / Home / Adicionar ao carrinho conversion page -->
-      <script>
-        gtag('event', 'conversion', {'send_to': 'AW-609568653/fpM-CMySjPsBEI2P1aIC'});
-      </script>
     <?php elseif( is_checkout() ): ?>
       <?php if ( is_order_received_page() ): ?>
-        <!-- Page Confirmacao |  [slenzarx.com/finalizar-compra/order-received/0000/?key=wc_order_xxxxxxxxxxxx] -->
         <!-- Event snippet for Pixel AW - LP2 Slenza / Order-Receive -->
-        <script>
-          gtag('event', 'conversion', {
-              'send_to': 'AW-609568653/fN4xCMvI4vgBEI2P1aIC',
-              'transaction_id': ''
-          });
-        </script>
       <?php else: ?>
-        <!-- Page Checkout - [slenzarx.com/finalizar-compra/] -->
         <!-- Event snippet for Pixel AW - LP2 Slenza Checkout / Iniciar finalização de compra -->
-        <script>
-          gtag('event', 'conversion', {'send_to': 'AW-609568653/j8FjCKbowPgBEI2P1aIC'});
-        </script>
       <?php endif; ?>
     <?php endif; ?>
 

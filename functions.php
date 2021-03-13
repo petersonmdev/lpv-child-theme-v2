@@ -13,7 +13,9 @@ function lpv_scripts() {
 
     if (is_checkout()) :
         wp_enqueue_style( 'css-main', get_stylesheet_directory_uri() . '/assets/css/checkout.css', true );
-        wp_enqueue_script( 'js-checkout', get_stylesheet_directory_uri() . '/assets/js/checkout.js', true );
+        if (!is_order_received_page()) :
+            wp_enqueue_script( 'js-checkout', get_stylesheet_directory_uri() . '/assets/js/checkout.js', true );
+        endif;
     else :
         wp_enqueue_style( 'css-main', get_stylesheet_directory_uri() . '/assets/css/main.css', true );
         wp_enqueue_style( 'css-animate', get_stylesheet_directory_uri() . '/assets/css/animate.css', true );
@@ -234,23 +236,9 @@ function woo_custom_add_to_cart( $cart_item_data ) {
     return $cart_item_data;
 }
 
-// EM TEORIA ERA PRA CHECAR O STATUS DA ORDEM E SOMENTE IR PARA A PAGINA SEGUINTE CASO O STATUS MUDE PARA 
-// FAILED OU PROCESSING, MAS NÃO ESTÁ FUNCIONANDO MUITO BEM
-// add_action( 'woocommerce_checkout_order_processed', 'is_express_delivery',  1, 1  );
-// function is_express_delivery( $order_id ){
-//    $order = new WC_Order( $order_id );
-//    if($order->has_status('pending')){
-//     sleep(5);
-//    }
-//    else {
-
-//    return;
-//     }
-// }
-
 // DEFINE THE woocommerce_review_order_before_payment callback
 add_action( 'woocommerce_review_order_before_submit', 'action_woocommerce_review_order_before_payment', 10, 0 );
-function action_woocommerce_review_order_before_payment(  ) {
+function action_woocommerce_review_order_before_payment() {
     ?>
     <script>
         /** */
