@@ -410,6 +410,16 @@ body.woocommerce-order-pay form#order_review #payment #place_order {
 	margin: 0;
 }
 
+div#order_review:before {
+	content: 'PEDIDO QUASE FINALIZADO!\A Informe seus dados de pagamento';
+	display: block;
+	white-space: break-spaces;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+
 
 
 /* Page Thank You */
